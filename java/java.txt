@@ -1,5 +1,12 @@
+동기화
+https://ohgyun.com/5
+
 public synchronized void methodA() { ... } 는
 public void methodA() { synchronized(this) { ... } } 과 동일하며,
 
 public static synchronized void methodA() {  ... } 는
 public static void methodA() { synchronized(TargetClass.class) { ... } } 과 동일합니다.
+
+
+어노테이션
+https://hamait.tistory.com/314
