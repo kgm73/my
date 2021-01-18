@@ -1,0 +1,2 @@
+외래키
+https://sqlite.org/foreignkeys.html

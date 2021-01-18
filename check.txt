@@ -1,0 +1,59 @@
+https://sqlite.org/foreignkeys.html
+
+create table book(
+	book	INTEGER PRIMARY KEY AUTOINCREMENT,
+	name	text	not null,
+	unique(name));
+	
+	
+create table member(
+	member	INTEGER	PRIMARY KEY AUTOINCREMENT,
+	book	integer	not null REFERENCES book,
+	name	text	not null,
+	phone	text,
+	phone2	text,
+	memo	text,
+	unique(book, name));	--이름중복
+
+		
+create table page(
+	page	INTEGER PRIMARY KEY AUTOINCREMENT,
+	book	integer not null REFERENCES book,
+	days	text	not null,
+	gubun	text	not null default '',
+	memo	text,
+	unique(book, days, gubun));
+
+		
+create table checks(
+	page	integer	not null REFERENCES page,
+	member	integer	not null REFERENCES member,
+	primary key(page, member));
+
+				
+create table memo(
+	memo	INTEGER PRIMARY KEY AUTOINCREMENT,
+	book	integer not null REFERENCES book,
+	gubun	INTEGER not null check(gubun in (1,2,3)),
+	cntn	text	not null,
+	wtime	date	not null,
+	ttime	text
+	
+	
+	
+	days	text	,
+	gubun	text	not null default '',
+	memo	text,
+	unique(book, days, gubun));				
+				
+--create index checks_idx on checks(,member);
+
+		
+create table sysdata(
+	key	text	not null,
+	val	text,
+	primary key(key));	
+	
+	
+	
+	select * from sqlite_sequence;
