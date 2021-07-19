@@ -8,4 +8,6 @@ git checkout -- 파일명
 git add (스테이지)취소
 git reset HEAD 파일명
 
+commit, 스테이지 삭제
+git reset HEAD^
 
