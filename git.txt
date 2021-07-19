@@ -11,4 +11,3 @@ git reset HEAD 파일명
 commit, 스테이지 취소
 git reset HEAD^
 
-
