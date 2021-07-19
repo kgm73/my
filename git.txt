@@ -1,3 +1,11 @@
 git add .
 git commit -m "21.01.18"
 git push
+
+편집취소
+git checkout -- 파일명
+
+git add (스테이지)취소
+git reset HEAD 파일명
+
+
