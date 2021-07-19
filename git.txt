@@ -11,3 +11,14 @@ git reset HEAD 파일명
 commit, 스테이지 삭제
 git reset HEAD^
 
+
+git pull 오류시
+1. 대상파일 수정
+2. git commit -am ""
+3. git push
+
+git push 오류시
+1. 대성파일 수정
+2. git commit -am ""
+3. git push
+
