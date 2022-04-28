@@ -10,3 +10,19 @@ public static void methodA() { synchronized(TargetClass.class) { ... } } 과 동
 
 어노테이션
 https://hamait.tistory.com/314
+
+
+thread
+https://wikidocs.net/230
+https://parkcheolu.tistory.com/18     <-- wait, notify, notifyAll
+
+
+
+키워드
+instanceof   https://arabiannight.tistory.com/313
+Assert   https://yeh35.github.io/blog.github.io/documents/java/java-assert/
+Serializable https://devlog-wjdrbs96.tistory.com/268
+transient
+native - 다른언어(C/C++) 함수호출 - https://mommoo.tistory.com/71
+volatile - 휘발성   - 하나의 Thread만 read & write하고 나머지 Thread가 read하는 상황에서 가장 최신의 값을 보장  - https://nesoy.github.io/articles/2018-06/Java-volatile
+strictfp - 엄격한 - Strict Floating Point (엄격한 부동소수점) 정책을 적용하여 일관성을 보장하도록 강제할 수 있다.
