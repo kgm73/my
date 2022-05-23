@@ -1,0 +1,15 @@
+https://gamjatwigim.tistory.com/74
+
+
+https://technote.kr/311
+
+
+
+
+https://ohgyun.com/5
+
+public synchronized void methodA() { ... } 는
+public void methodA() { synchronized(this) { ... } } 과 동일하며,
+
+public static synchronized void methodA() {  ... } 는
+public static void methodA() { synchronized(TargetClass.class) { ... } } 과 동일합니다.
